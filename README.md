@@ -7,17 +7,19 @@ The goal of this exercise is to learn React Router and how to fetch data into yo
 
 ## Requirements
 You need to be comfortable writing JavaScript (ES6: Module system, class, JS context vs scope, arrow functions).
-You need to have `node`and `npm`installed in your computer.
+You need to have `node` (at least version 4.4.5) and git installed in your computer.
 
 ## Getting started:
 
-Clone this [repository](https://github.com/alexlbr/react-course) and run `npm start`
+Clone [this repository](https://github.com/alexlbr/react-course) and run `npm start`
 
 `git clone https://github.com/alexlbr/react-course` && `npm install`
 
 Now you can run your application by running: `npm start`
 
-## Good to read about React and fetching data before solving the exercise
+## Before start hacking the exercise 
+
+Good to read about React and fetching data before solving the exercise
 
 - https://medium.com/@learnreact/container-components-c0e67432e005#.btkvoecha
 - https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.oy1l2u2ew
