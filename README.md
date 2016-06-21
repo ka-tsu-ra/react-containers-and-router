@@ -17,7 +17,7 @@ Clone [this repository](https://github.com/alexlbr/react-course) and run `npm st
 
 Now you can run your application by running: `npm start`
 
-## Before start hacking the exercise 
+## Before you start hacking 
 
 Good to read about React and fetching data before solving the exercise
 
