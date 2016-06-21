@@ -1,6 +1,6 @@
 ## HackJam ReactJS
 
-Join [![Gitter](https://badges.gitter.im/hackages/hackjam-react.svg)](https://gitter.im/alexlbr/react-course?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+For questions please join [![Gitter](https://badges.gitter.im/hackages/hackjam-react.svg)](https://gitter.im/alexlbr/react-course?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Goal
 The goal of this exercise is to learn React Router and how to fetch data into your app. There are thousands of tutorials online but there's no better way to learn than hacking it yourself.
