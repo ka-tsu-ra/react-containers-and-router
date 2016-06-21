@@ -15,11 +15,6 @@ class UserProfile extends React.Component {
         this.fetchUser(this.props.params.username);
     }
 
-    componentWillUnmount() {
-        
-        console.log("unmounted")
-    }
-
     fetchUser(username) {
         fetch(`/data/users/${username}.json`, {
             method: 'get'
