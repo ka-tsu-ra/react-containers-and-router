@@ -47,21 +47,22 @@ class UserList extends React.Component {
         });
 
         const listView = <List className="view"> {listItems} </List>
-        const detailView = <div className="view"> {this.props.children}</div>
-        let leftView, rightView;
+        const childrenView = <div className="view"> {this.props.children}</div>
+
+        let masterView, detailView;
 
         if (this.props.params.username && this.props.width !== LARGE) {
-            leftView = detailView;
-            rightView = null;
+            masterView = childrenView;
+            detailView = null;
         } 
         else {
-            leftView = listView;
-            rightView = detailView;
+            masterView = listView;
+            detailView = childrenView;
         }
         return (
             <div className="view-container">
-                {leftView}
-                {rightView}
+                {masterView}
+                {detailView}
             </div>
         );
     }
