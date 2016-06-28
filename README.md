@@ -47,4 +47,4 @@ Have fun!
 
 Stay tuned for more information and course material for React training
 
-[Techdency Team](http://techdency.com)
+[LeanJS Team](http://leanjs.com)
