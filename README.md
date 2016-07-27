@@ -13,7 +13,9 @@ You need to have `node` (at least version 4.4.5) and git installed in your compu
 
 Clone [this repository](https://github.com/alexlbr/react-course) and run `npm start`
 
-`git clone https://github.com/alexlbr/react-course` && `npm install`
+`git clone https://github.com/alexlbr/react-course` 
+`cd react-course` 
+`npm install`
 
 Now you can run your application by running: `npm start`
 
@@ -29,9 +31,10 @@ Good to read about React and fetching data before solving the exercise
 ## Exercise
 
 1. Implement the following route http://localhost:3456/#/workshops. Hint: Check this file app/config/Routes.js
-2. Clicking on a user on the list should display the user's profile. Hint:  Check UserListContainer, should it return children components?  
-3. Refactor UserProfile so it implements the [container component pattern](https://medium.com/@learnreact/container-components-c0e67432e005). Hint: You also need to change app/config/Routes.js
-4. Implement WorkshopList and WorkshopListContainer using http://localhost:3456/data/workshops.js
+2. Refactor UserList so it implements the [container component pattern](https://medium.com/@learnreact/container-components-c0e67432e005). Use UserListContainer. Hint: You also need to change app/config/Routes.js
+3. Clicking on a user on the list should display the user's profile. Hint:  Check UserListContainer, should it return children components?  
+4. Refactor UserProfile so it implements the [container component pattern](https://medium.com/@learnreact/container-components-c0e67432e005). Hint: You also need to change app/config/Routes.js
+5. Implement WorkshopList and WorkshopListContainer using http://localhost:3456/data/workshops.js
 
 Have fun!
 
@@ -44,4 +47,4 @@ Have fun!
 
 Stay tuned for more information and course material for React training
 
-[Techdency Team](http://techdency.com)
+[LeanJS Team](http://leanjs.com)
