@@ -36,15 +36,13 @@ class UserList extends React.Component {
     }
     
     render() {
-        let listItems = this.state.users.map(user => {
-            return (
-                <ListItem onClick={this.showUserProfile.bind(this, user)} key={user.username} style={{color: "black"}}
-                    primaryText={ `${user.name.first} ${user.name.last}`}
-                    leftIcon={<ActionGrade color={pinkA200} />}
-                    rightAvatar={<Avatar src={`images/${user.username}_sm.jpg`} />}
-                />
-            );
-        });
+        let listItems = this.state.users.map(user => (
+            <ListItem onClick={this.showUserProfile.bind(this, user)} key={user.username} style={{color: "black"}}
+                primaryText={ `${user.name.first} ${user.name.last}`}
+                leftIcon={<ActionGrade color={pinkA200} />}
+                rightAvatar={<Avatar src={`images/${user.username}_sm.jpg`} />}
+            />
+        ));
 
         const listView = <List className="view"> {listItems} </List>
         const detailView = <div className="view"> {this.props.children}</div>
