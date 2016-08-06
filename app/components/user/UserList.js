@@ -12,44 +12,21 @@ es6promise.polyfill();
 
 class UserList extends React.Component {
     
-    constructor() {
-        super();
-        this.state = { 
-            users : []
-        }
-    }
-    
-    componentDidMount() {
-        fetch('/data/users.js', {
-            method: 'get'
-        }).then((response) => {
-            return response.json()
-        }).then((data) => {  
-            this.setState({users:data})
-        }).catch((err)=> {
-            console.log(err);
-        });
-    }
-    
-    showUserProfile(user) {
-        this.context.router.push(`/users/${user.username}`);
-    }
-    
     render() {
-        let listItems = this.state.users.map(user => (
-            <ListItem onClick={this.showUserProfile.bind(this, user)} key={user.username} style={{color: "black"}}
+        let listItems = this.props.users.map(user => (
+            <ListItem onClick={this.props.showUserProfile.bind(this, user)} key={user.username} style={{color: "black"}}
                 primaryText={ `${user.name.first} ${user.name.last}`}
                 leftIcon={<ActionGrade color={pinkA200} />}
                 rightAvatar={<Avatar src={`images/${user.username}_sm.jpg`} />}
             />
         ));
-
+        console.log(listItems);
         const listView = <List className="view"> {listItems} </List>
         const childrenView = <div className="view"> {this.props.children}</div>
 
         let masterView, detailView;
 
-        if (this.props.params.username && this.props.width !== LARGE) {
+        if (this.props.username && this.props.width !== LARGE) {
             masterView = childrenView;
             detailView = null;
         } 

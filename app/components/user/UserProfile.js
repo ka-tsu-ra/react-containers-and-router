@@ -5,31 +5,8 @@ import 'isomorphic-fetch';
 es6promise.polyfill();
 
 class UserProfile extends React.Component {
-
-    constructor() {
-        super();
-        this.state = { username : null };
-    }
-
-    componentDidMount() {
-        this.fetchUser(this.props.params.username);
-    }
-
-    fetchUser(username) {
-        fetch(`/data/users/${username}.json`, {
-            method: 'get'
-        }).then((response) => {
-            return response.json()
-        }).then((data) => {
-            this.setState({user : data});
-        }).catch((err)=> {
-            console.log(err);
-        });
-    }
-
     render() {
-        
-        let user = this.state.user;
+        let user = this.props.user;
         let username = this.props.params.username;
         if (user && user.username != username) {
             this.fetchUser(username);
